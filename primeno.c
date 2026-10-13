@@ -6,6 +6,12 @@ int main() {
     if (n<=1)
     printf("%d is not prime",n);
     else {
-        for (int i=1, i<=n; i++)
+        for (int i=2; i<=n; i++) {
+            if(n%i ==0) {
+                count++;
+            }
+        }    
     }
+    if (count==1) printf("%d is prime", n);
+    return 0;
 }
